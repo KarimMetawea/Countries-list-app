@@ -9,7 +9,8 @@ pod 'Firebase/Storage'
 pod 'GoogleSignIn'
 pod 'FacebookCore'
 pod 'FacebookLogin'
-
+pod 'JGProgressHUD'
+pod 'Alamofire'
 
 
   # Pods for Countries List App

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8i1-tY-S8Q">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CountriesVC-->
+        <scene sceneID="3NV-81-kkx">
+            <objects>
+                <viewController storyboardIdentifier="CountriesVC" id="x0P-MB-PyM" customClass="CountriesVC" customModule="Countries_List_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dSr-Mk-URs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="160" estimatedRowHeight="160" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Or1-3D-lJK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <color key="backgroundColor" name="BackGroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CountryCell" rowHeight="160" id="pla-HD-th0" customClass="CountryCell" customModule="Countries_List_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="160"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pla-HD-th0" id="DTk-wj-7gz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Eq-Uc-ZZ0">
+                                                    <rect key="frame" x="20" y="20" width="374" height="120"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Egypt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnE-Kb-49q">
+                                                            <rect key="frame" x="160" y="40" width="54.5" height="40"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="weH-4X-HSS"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                                            <color key="textColor" name="BackGroundColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="AccentColor "/>
+                                                    <constraints>
+                                                        <constraint firstItem="hnE-Kb-49q" firstAttribute="centerY" secondItem="4Eq-Uc-ZZ0" secondAttribute="centerY" id="I9R-x0-l3X"/>
+                                                        <constraint firstItem="hnE-Kb-49q" firstAttribute="centerX" secondItem="4Eq-Uc-ZZ0" secondAttribute="centerX" id="Xyp-yX-wTJ"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" name="BackGroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="4Eq-Uc-ZZ0" firstAttribute="top" secondItem="DTk-wj-7gz" secondAttribute="top" constant="20" id="BCT-wn-9tW"/>
+                                                <constraint firstItem="4Eq-Uc-ZZ0" firstAttribute="leading" secondItem="DTk-wj-7gz" secondAttribute="leading" constant="20" id="CUb-Av-NSJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="4Eq-Uc-ZZ0" secondAttribute="bottom" constant="20" id="Mor-Os-pUb"/>
+                                                <constraint firstAttribute="trailing" secondItem="4Eq-Uc-ZZ0" secondAttribute="trailing" constant="20" id="gbY-Ho-kRU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="BackGroundColor"/>
+                                        <connections>
+                                            <outlet property="CountryLabel" destination="hnE-Kb-49q" id="5Rc-MB-ZUU"/>
+                                            <outlet property="backGroundView" destination="4Eq-Uc-ZZ0" id="riY-Kt-fcP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" name="BackGroundColor"/>
+                        <constraints>
+                            <constraint firstItem="igN-4B-uXa" firstAttribute="trailing" secondItem="Or1-3D-lJK" secondAttribute="trailing" id="3YS-EA-v3p"/>
+                            <constraint firstItem="Or1-3D-lJK" firstAttribute="leading" secondItem="igN-4B-uXa" secondAttribute="leading" id="5gU-Up-1yM"/>
+                            <constraint firstItem="Or1-3D-lJK" firstAttribute="top" secondItem="igN-4B-uXa" secondAttribute="top" id="6h4-dX-hi3"/>
+                            <constraint firstAttribute="bottom" secondItem="Or1-3D-lJK" secondAttribute="bottom" id="U0P-nZ-tNa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="igN-4B-uXa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Org-dx-88b"/>
+                    <connections>
+                        <outlet property="tableView" destination="Or1-3D-lJK" id="uVM-8n-bMQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pg5-FB-lcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1153.6231884057972" y="111.83035714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1DU-Na-IRk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8i1-tY-S8Q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="UTL-om-MqL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="BackGroundColor"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="x0P-MB-PyM" kind="relationship" relationship="rootViewController" id="kVz-ck-SkL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ke5-SJ-bqo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="243.47826086956525" y="111.83035714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor ">
+            <color red="0.35686274509803922" green="0.68627450980392157" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BackGroundColor">
+            <color red="0.050980392156862744" green="0.18823529411764706" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+    <color key="tintColor" name="TintColor"/>
+</document>

@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		D94B507522999484004EB163 /* credentials-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = D94B507422999484004EB163 /* credentials-2.plist */; };
 		D94B507722999DE8004EB163 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D94B507622999DE8004EB163 /* GoogleService-Info.plist */; };
+		D94B507A229AEB0C004EB163 /* CountriesVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94B5079229AEB0C004EB163 /* CountriesVC.storyboard */; };
+		D94B507D229AEB3C004EB163 /* CountriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94B507C229AEB3C004EB163 /* CountriesVC.swift */; };
+		D94B507F229AEDA4004EB163 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94B507E229AEDA4004EB163 /* CountryCell.swift */; };
+		D94B5081229AF131004EB163 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94B5080229AF131004EB163 /* CountryModel.swift */; };
+		D94B5083229AF15F004EB163 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94B5082229AF15F004EB163 /* DataModel.swift */; };
+		D94B5086229AF1FC004EB163 /* CountriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94B5085229AF1FC004EB163 /* CountriesService.swift */; };
 		D9838C522296D3A4008E0E0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9838C512296D3A4008E0E0A /* AppDelegate.swift */; };
 		D9838C592296D3A5008E0E0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9838C582296D3A5008E0E0A /* Assets.xcassets */; };
 		D9838C5C2296D3A5008E0E0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9838C5A2296D3A5008E0E0A /* LaunchScreen.storyboard */; };
@@ -17,7 +23,7 @@
 		D9838C712296E47F008E0E0A /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9838C702296E47F008E0E0A /* UIViewExtension.swift */; };
 		D9838C732296E4AB008E0E0A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9838C722296E4AB008E0E0A /* Theme.swift */; };
 		D9838C772296E7E8008E0E0A /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9838C762296E7E8008E0E0A /* LogIn.storyboard */; };
-		D9838C792296E815008E0E0A /* LogInVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9838C782296E815008E0E0A /* LogInVc.swift */; };
+		D9838C792296E815008E0E0A /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9838C782296E815008E0E0A /* LogInVC.swift */; };
 		D9838C7B2296E835008E0E0A /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9838C7A2296E835008E0E0A /* RegisterVC.swift */; };
 		D9E83EEC2297908500302485 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E83EEB2297908500302485 /* UITextFieldExtension.swift */; };
 		DF1CE9E9603B8AA560AAA50F /* Pods_Countries_List_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA73D3B40CBBF1EC45A63BF /* Pods_Countries_List_App.framework */; };
@@ -29,6 +35,12 @@
 		83B7F7A3FF688A8EAE58C80B /* Pods-Countries List App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Countries List App.release.xcconfig"; path = "Target Support Files/Pods-Countries List App/Pods-Countries List App.release.xcconfig"; sourceTree = "<group>"; };
 		D94B507422999484004EB163 /* credentials-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "credentials-2.plist"; sourceTree = "<group>"; };
 		D94B507622999DE8004EB163 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D94B5079229AEB0C004EB163 /* CountriesVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CountriesVC.storyboard; sourceTree = "<group>"; };
+		D94B507C229AEB3C004EB163 /* CountriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesVC.swift; sourceTree = "<group>"; };
+		D94B507E229AEDA4004EB163 /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
+		D94B5080229AF131004EB163 /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
+		D94B5082229AF15F004EB163 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		D94B5085229AF1FC004EB163 /* CountriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesService.swift; sourceTree = "<group>"; };
 		D9838C4E2296D3A4008E0E0A /* Countries List App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Countries List App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9838C512296D3A4008E0E0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9838C582296D3A5008E0E0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,7 +51,7 @@
 		D9838C702296E47F008E0E0A /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		D9838C722296E4AB008E0E0A /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		D9838C762296E7E8008E0E0A /* LogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
-		D9838C782296E815008E0E0A /* LogInVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVc.swift; sourceTree = "<group>"; };
+		D9838C782296E815008E0E0A /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
 		D9838C7A2296E835008E0E0A /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		D9E83EEB2297908500302485 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +85,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D94B5078229AEA6F004EB163 /* CountriesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D94B5079229AEB0C004EB163 /* CountriesVC.storyboard */,
+				D94B507C229AEB3C004EB163 /* CountriesVC.swift */,
+				D94B507E229AEDA4004EB163 /* CountryCell.swift */,
+			);
+			path = CountriesScreen;
+			sourceTree = "<group>";
+		};
+		D94B5084229AF1A3004EB163 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D94B5085229AF1FC004EB163 /* CountriesService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		D9838C452296D3A4008E0E0A = {
 			isa = PBXGroup;
 			children = (
@@ -94,9 +124,9 @@
 		D9838C502296D3A4008E0E0A /* Countries List App */ = {
 			isa = PBXGroup;
 			children = (
+				D94B5084229AF1A3004EB163 /* Networking */,
 				D9838C692296D4DB008E0E0A /* Extensions */,
 				D9838C682296D4D3008E0E0A /* Model */,
-				D9838C672296D4C5008E0E0A /* Helpers */,
 				D9838C662296D4AC008E0E0A /* Scenes */,
 				D9838C652296D490008E0E0A /* Resources */,
 				D9838C642296D483008E0E0A /* Core */,
@@ -136,21 +166,17 @@
 		D9838C662296D4AC008E0E0A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				D94B5078229AEA6F004EB163 /* CountriesScreen */,
 				D9838C6A2296D7DA008E0E0A /* Auth */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		D9838C672296D4C5008E0E0A /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
 		D9838C682296D4D3008E0E0A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D94B5080229AF131004EB163 /* CountryModel.swift */,
+				D94B5082229AF15F004EB163 /* DataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -186,7 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				D9838C762296E7E8008E0E0A /* LogIn.storyboard */,
-				D9838C782296E815008E0E0A /* LogInVc.swift */,
+				D9838C782296E815008E0E0A /* LogInVC.swift */,
 			);
 			path = LogIn;
 			sourceTree = "<group>";
@@ -263,6 +289,7 @@
 			files = (
 				D9838C6F2296E3AB008E0E0A /* RegisterVC.storyboard in Resources */,
 				D9838C6C2296E2A8008E0E0A /* Colors.xcassets in Resources */,
+				D94B507A229AEB0C004EB163 /* CountriesVC.storyboard in Resources */,
 				D9838C5C2296D3A5008E0E0A /* LaunchScreen.storyboard in Resources */,
 				D94B507722999DE8004EB163 /* GoogleService-Info.plist in Resources */,
 				D9838C592296D3A5008E0E0A /* Assets.xcassets in Resources */,
@@ -337,10 +364,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D94B507F229AEDA4004EB163 /* CountryCell.swift in Sources */,
 				D9838C732296E4AB008E0E0A /* Theme.swift in Sources */,
+				D94B5081229AF131004EB163 /* CountryModel.swift in Sources */,
 				D9E83EEC2297908500302485 /* UITextFieldExtension.swift in Sources */,
+				D94B5086229AF1FC004EB163 /* CountriesService.swift in Sources */,
 				D9838C712296E47F008E0E0A /* UIViewExtension.swift in Sources */,
-				D9838C792296E815008E0E0A /* LogInVc.swift in Sources */,
+				D94B5083229AF15F004EB163 /* DataModel.swift in Sources */,
+				D94B507D229AEB3C004EB163 /* CountriesVC.swift in Sources */,
+				D9838C792296E815008E0E0A /* LogInVC.swift in Sources */,
 				D9838C7B2296E835008E0E0A /* RegisterVC.swift in Sources */,
 				D9838C522296D3A4008E0E0A /* AppDelegate.swift in Sources */,
 			);

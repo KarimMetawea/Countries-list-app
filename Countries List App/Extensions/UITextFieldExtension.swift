@@ -21,9 +21,12 @@ extension UITextField {
         self.rightViewMode = .always
     }
     
+    
+    
     var hasValue:Bool {
         
         guard text == "" else {
+            self.layer.borderColor = UIColor.accentColor.cgColor
             self.rightViewMode = .never
             return true}
         
@@ -37,6 +40,8 @@ extension UITextField {
         self.rightViewMode = .always
         return false
     }
+    
+    
     
     var validateMinCharecterCount:Bool {
         
@@ -58,9 +63,11 @@ extension UITextField {
     }
     
     
+    
+    
     var emailIsValid:Bool{
         if try! NSRegularExpression(pattern: "^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}$", options: .caseInsensitive).firstMatch(in: text ?? "" , options: [], range: NSRange(location: 0, length: text!.count )) == nil {
-            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 80, height: 30))
+            let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 30))
             label.text = "Enter Valid Email"
             label.font = UIFont(name: "Avenir", size: 12)
             label.textColor = #colorLiteral(red: 0.5803921569, green: 0.06666666667, blue: 0, alpha: 1)
@@ -77,6 +84,8 @@ extension UITextField {
         self.rightViewMode = .never
         return true
     }
+    
+    
     
     func passwordMatch(password:String?) -> Bool{
         if self.text == password || password == nil{

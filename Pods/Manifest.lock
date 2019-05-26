@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.8.2)
   - FacebookCore (0.7.0):
     - FBSDKCoreKit (~> 5.0)
   - FacebookLogin (0.7.0):
@@ -69,18 +70,22 @@ PODS:
   - GoogleUtilities/Reachability (6.1.0):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.2.2)
+  - JGProgressHUD (2.0.3)
   - leveldb-library (1.20)
 
 DEPENDENCIES:
+  - Alamofire
   - FacebookCore
   - FacebookLogin
   - Firebase/Auth
   - Firebase/Database
   - Firebase/Storage
   - GoogleSignIn
+  - JGProgressHUD
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - FacebookCore
     - FacebookLogin
     - FBSDKCoreKit
@@ -95,9 +100,11 @@ SPEC REPOS:
     - GoogleToolboxForMac
     - GoogleUtilities
     - GTMSessionFetcher
+    - JGProgressHUD
     - leveldb-library
 
 SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   FacebookCore: 4eee98476cb37a485af5d337eb21f8cd5b3c7e6c
   FacebookLogin: 94cdad6850e86a2b04704dedfe7674a7af8148eb
   FBSDKCoreKit: 4a19534474ade7c71bd016d800aa5e7722bcdda1
@@ -112,8 +119,9 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: b3553629623a3b1bff17f555e736cd5a6d95ad55
   GoogleUtilities: 84df567c76ca84f67b7bb40e769fdd4acc746a10
   GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
+  JGProgressHUD: 12b20a8f4ffe05258f8635c1ab92816e451f904d
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
 
-PODFILE CHECKSUM: 3ce7da643d21d31d9fbe8eb071b1c91e74f35269
+PODFILE CHECKSUM: e70e3a4261787132fbab0122dc346bd39ead3067
 
 COCOAPODS: 1.7.0
