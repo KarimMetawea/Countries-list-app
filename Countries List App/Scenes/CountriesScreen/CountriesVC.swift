@@ -82,6 +82,16 @@ extension CountriesVC : UITableViewDelegate , UITableViewDataSource {
         cell.configureCell(country: country)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let transform = CATransform3DTranslate(CATransform3DIdentity, 0, 50, 0)
+        cell.layer.transform = transform
+        cell.alpha = 0.5
+        UIView.animate(withDuration: 1) {
+            cell.layer.transform = CATransform3DIdentity
+            cell.alpha = 1.0
+        }
+    }
 //    setting up the delegate
     func setupTableView() {
         tableView.delegate = self
