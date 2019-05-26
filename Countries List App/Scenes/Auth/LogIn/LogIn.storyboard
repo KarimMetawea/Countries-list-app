@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xwk-YA-JY4">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Log In Vc-->
+        <scene sceneID="r5L-U0-sUg">
+            <objects>
+                <viewController storyboardIdentifier="RegisterVC" id="Xwk-YA-JY4" customClass="LogInVc" customModule="Countries_List_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J3k-hj-3RK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="oZZ-NJ-j5a">
+                                <rect key="frame" x="20" y="324" width="374" height="178"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kyK-gV-c6y">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <color key="backgroundColor" name="TintColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="glr-2p-UQ8"/>
+                                        </constraints>
+                                        <color key="textColor" name="BackGroundColor"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password " textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HWk-7Y-HQ9">
+                                        <rect key="frame" x="0.0" y="64" width="374" height="50"/>
+                                        <color key="backgroundColor" name="TintColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="3oX-26-EeU"/>
+                                        </constraints>
+                                        <color key="textColor" name="BackGroundColor"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nO-mF-dAm">
+                                        <rect key="frame" x="0.0" y="128" width="374" height="50"/>
+                                        <color key="backgroundColor" name="AccentColor "/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="Log In">
+                                            <color key="titleColor" name="BackGroundColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7s9-9P-8tw">
+                                <rect key="frame" x="40" y="84" width="334" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="qYU-nn-GNu"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdr-vX-Q9I">
+                                <rect key="frame" x="100" y="841" width="214" height="30"/>
+                                <state key="normal" title="Not Registered? Sign Up">
+                                    <color key="titleColor" name="TintColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="VBs-Vr-lsf" kind="unwind" unwindAction="unwindToRegister:" id="Gz9-sU-UMm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="BackGroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nUN-j4-10Q" firstAttribute="trailing" secondItem="wdr-vX-Q9I" secondAttribute="trailing" constant="100" id="EEb-TJ-yB0"/>
+                            <constraint firstItem="oZZ-NJ-j5a" firstAttribute="top" secondItem="7s9-9P-8tw" secondAttribute="bottom" constant="40" id="Eod-hf-Ged"/>
+                            <constraint firstItem="7s9-9P-8tw" firstAttribute="leading" secondItem="nUN-j4-10Q" secondAttribute="leading" constant="40" id="GmR-GT-rn9"/>
+                            <constraint firstItem="oZZ-NJ-j5a" firstAttribute="leading" secondItem="nUN-j4-10Q" secondAttribute="leading" constant="20" id="N5d-lC-ANG"/>
+                            <constraint firstItem="wdr-vX-Q9I" firstAttribute="centerX" secondItem="J3k-hj-3RK" secondAttribute="centerX" id="PM3-cV-Qgx"/>
+                            <constraint firstItem="7s9-9P-8tw" firstAttribute="top" secondItem="nUN-j4-10Q" secondAttribute="top" constant="40" id="V24-vf-Z0G"/>
+                            <constraint firstItem="nUN-j4-10Q" firstAttribute="trailing" secondItem="7s9-9P-8tw" secondAttribute="trailing" constant="40" id="VII-eL-dxh"/>
+                            <constraint firstAttribute="bottom" secondItem="wdr-vX-Q9I" secondAttribute="bottom" constant="25" id="eUI-kH-PVo"/>
+                            <constraint firstItem="nUN-j4-10Q" firstAttribute="trailing" secondItem="oZZ-NJ-j5a" secondAttribute="trailing" constant="20" id="s6K-7R-yGS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nUN-j4-10Q"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="kyK-gV-c6y" id="cSm-pI-WzB"/>
+                        <outlet property="logInButton" destination="8nO-mF-dAm" id="uIn-fi-LRe"/>
+                        <outlet property="passwordTextField" destination="HWk-7Y-HQ9" id="k9n-bd-CpT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qfm-Sl-Qcf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="VBs-Vr-lsf" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="160.71428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor ">
+            <color red="0.35686274509803922" green="0.68627450980392157" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BackGroundColor">
+            <color red="0.050980392156862744" green="0.18823529411764706" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TintColor">
+            <color red="0.74509803921568629" green="0.90588235294117647" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

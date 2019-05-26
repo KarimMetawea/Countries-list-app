@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tJv-yN-bRe">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RegisterVC-->
+        <scene sceneID="bhs-9c-5ND">
+            <objects>
+                <viewController id="tJv-yN-bRe" customClass="RegisterVC" customModule="Countries_List_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HRQ-Mc-HA8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="2sq-EI-wEU">
+                                <rect key="frame" x="20" y="184" width="374" height="242"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="DMm-HO-Pmy">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <color key="backgroundColor" name="TintColor"/>
+                                        <color key="tintColor" name="BackGroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="BJF-29-wfO"/>
+                                        </constraints>
+                                        <color key="textColor" name="BackGroundColor"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="tJv-yN-bRe" id="yHi-wK-zFM"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password " minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="mHQ-Jk-UsH">
+                                        <rect key="frame" x="0.0" y="64" width="374" height="50"/>
+                                        <color key="backgroundColor" name="TintColor"/>
+                                        <color key="tintColor" name="BackGroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="N2A-6E-S3f"/>
+                                        </constraints>
+                                        <color key="textColor" name="BackGroundColor"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="tJv-yN-bRe" id="edw-YT-ar1"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password " minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="BKs-x5-ZFI">
+                                        <rect key="frame" x="0.0" y="128" width="374" height="50"/>
+                                        <color key="backgroundColor" name="TintColor"/>
+                                        <color key="tintColor" name="BackGroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="3bj-1L-kv4"/>
+                                        </constraints>
+                                        <color key="textColor" name="BackGroundColor"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="tJv-yN-bRe" id="uTT-iq-2hT"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaG-BC-gKu">
+                                        <rect key="frame" x="0.0" y="192" width="374" height="50"/>
+                                        <color key="backgroundColor" name="AccentColor "/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" name="BackGroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signUpButtonPressed:" destination="tJv-yN-bRe" eventType="touchUpInside" id="VFK-aO-azL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zLI-mr-hFz">
+                                <rect key="frame" x="177" y="84" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="5VQ-BY-0Ke"/>
+                                    <constraint firstAttribute="height" constant="60" id="MEz-xM-bnW"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPJ-Wb-UxF">
+                                <rect key="frame" x="100" y="841" width="214" height="30"/>
+                                <state key="normal" title="Already a user ? log in">
+                                    <color key="titleColor" name="TintColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="haveAccountPressed:" destination="tJv-yN-bRe" eventType="touchUpInside" id="noN-GB-MmR"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="9hW-aV-5Mg">
+                                <rect key="frame" x="20" y="677" width="374" height="114"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPh-mt-Uxx">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.098039215686274508" green="0.23921568627450979" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="yDQ-P4-OqP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                        <state key="normal" title="Log in With Facebook"/>
+                                        <connections>
+                                            <action selector="facebookButtonPressed:" destination="tJv-yN-bRe" eventType="touchUpInside" id="dZr-tq-wad"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bg-rE-N78">
+                                        <rect key="frame" x="0.0" y="64" width="374" height="50"/>
+                                        <color key="backgroundColor" name="TintColor"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                        <state key="normal" title="Log In With Google">
+                                            <color key="titleColor" name="BackGroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="googleButtonPressed:" destination="tJv-yN-bRe" eventType="touchUpInside" id="GXb-w2-PAD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="BackGroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2sq-EI-wEU" firstAttribute="top" secondItem="zLI-mr-hFz" secondAttribute="bottom" constant="40" id="4Ds-Tk-AtO"/>
+                            <constraint firstItem="4Ed-mu-nBP" firstAttribute="trailing" secondItem="2sq-EI-wEU" secondAttribute="trailing" constant="20" id="6t3-BM-sTh"/>
+                            <constraint firstItem="zLI-mr-hFz" firstAttribute="centerX" secondItem="HRQ-Mc-HA8" secondAttribute="centerX" id="AmP-sq-DS2"/>
+                            <constraint firstItem="zLI-mr-hFz" firstAttribute="top" secondItem="4Ed-mu-nBP" secondAttribute="top" constant="40" id="CG9-Ht-UZG"/>
+                            <constraint firstItem="2sq-EI-wEU" firstAttribute="leading" secondItem="4Ed-mu-nBP" secondAttribute="leading" constant="20" id="Dvm-qt-ADU"/>
+                            <constraint firstAttribute="bottom" secondItem="QPJ-Wb-UxF" secondAttribute="bottom" constant="25" id="GRm-ya-WI8"/>
+                            <constraint firstItem="9hW-aV-5Mg" firstAttribute="leading" secondItem="4Ed-mu-nBP" secondAttribute="leading" constant="20" id="ImL-Em-1yR"/>
+                            <constraint firstItem="QPJ-Wb-UxF" firstAttribute="centerX" secondItem="HRQ-Mc-HA8" secondAttribute="centerX" id="JhY-jk-ifo"/>
+                            <constraint firstItem="QPJ-Wb-UxF" firstAttribute="top" secondItem="9hW-aV-5Mg" secondAttribute="bottom" constant="50" id="c3e-dZ-Ykc"/>
+                            <constraint firstItem="4Ed-mu-nBP" firstAttribute="trailing" secondItem="QPJ-Wb-UxF" secondAttribute="trailing" constant="100" id="e4j-de-REm"/>
+                            <constraint firstItem="4Ed-mu-nBP" firstAttribute="trailing" secondItem="9hW-aV-5Mg" secondAttribute="trailing" constant="20" id="gAJ-bP-H4e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4Ed-mu-nBP"/>
+                    </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="BKs-x5-ZFI" id="oqq-dM-LCH"/>
+                        <outlet property="emailTextField" destination="DMm-HO-Pmy" id="sN4-DZ-79E"/>
+                        <outlet property="facebookButton" destination="wPh-mt-Uxx" id="hzR-Ow-ZdZ"/>
+                        <outlet property="googleButton" destination="3Bg-rE-N78" id="bf1-if-w2v"/>
+                        <outlet property="passwordTextField" destination="mHQ-Jk-UsH" id="NgC-Bh-QMR"/>
+                        <outlet property="registerButton" destination="CaG-BC-gKu" id="8Dh-oB-xDW"/>
+                        <segue destination="rp2-CF-SUs" kind="show" identifier="ToLogIn" id="WjY-uM-nez"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kkj-2V-GQF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="160.71428571428569"/>
+        </scene>
+        <!--LogIn-->
+        <scene sceneID="VFP-X9-FlR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LogIn" id="rp2-CF-SUs" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gPL-28-thk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="724" y="190"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor ">
+            <color red="0.35686274509803922" green="0.68627450980392157" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BackGroundColor">
+            <color red="0.050980392156862744" green="0.18823529411764706" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BackGroundColor">
+            <color red="0.050980392156862744" green="0.18823529411764706" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TintColor">
+            <color red="0.74509803921568629" green="0.90588235294117647" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TintColor">
+            <color red="0.74509803921568629" green="0.90588235294117647" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+    <color key="tintColor" name="TintColor"/>
+</document>
