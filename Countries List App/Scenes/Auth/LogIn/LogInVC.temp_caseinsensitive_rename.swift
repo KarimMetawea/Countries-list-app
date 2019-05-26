@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import JGProgressHUD
 
-class LogInVc: UIViewController {
+
+class LogInVC: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var logInButton: UIButton!
+    
+    let hud: JGProgressHUD = {
+        let hud = JGProgressHUD(style: .light)
+        hud.interactionType = .blockAllTouches
+        return hud
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +44,7 @@ class LogInVc: UIViewController {
 }
 
 
-extension LogInVc : UITextFieldDelegate{
+extension LogInVC : UITextFieldDelegate{
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == emailTextField {
