@@ -132,6 +132,7 @@ class RegisterVC: UIViewController {
     
     
     @IBAction func googleButtonPressed(_ sender: Any) {
+        hud.show(in: view, animated: true)
         GIDSignIn.sharedInstance().signIn()
     }
     
@@ -163,10 +164,28 @@ class RegisterVC: UIViewController {
 
 extension RegisterVC :  GIDSignInUIDelegate,GIDSignInDelegate{
     
-    
+//    google sign in delegates
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        navigateToCountriesVc()
+        if let error = error {
+            print(error.localizedDescription)
+            hud.dismiss()
+            return
+        }
+        guard let authentication = user.authentication else { return }
+        let credential = GoogleAuthProvider.credential(withIDToken: (authentication.idToken)!, accessToken: (authentication.accessToken)!)
+        // When user is signed in
+        Auth.auth().signIn(with: credential, completion: { (user, error) in
+            if let error = error {
+                print("error:\(error.localizedDescription)")
+                self.hud.dismiss()
+                return
+            }
+            print("sign in with google in firebase")
+            self.hud.dismiss()
+            self.navigateToCountriesVc()
+        })
     }
+    
     
 //    setup delegate
     func setGoogleButtonDelegates(){

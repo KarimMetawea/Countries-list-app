@@ -63,20 +63,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
 
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        if let error = error {
-            print(error.localizedDescription)
-            return
-        }
-        guard let authentication = user.authentication else { return }
-        let credential = GoogleAuthProvider.credential(withIDToken: (authentication.idToken)!, accessToken: (authentication.accessToken)!)
-        // When user is signed in
-        Auth.auth().signIn(with: credential, completion: { (user, error) in
-            if let error = error {
-                print("error:\(error.localizedDescription)")
-                return
-            }
-            print("sign in with google in firebase")
-        })
+     
     }
     
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
