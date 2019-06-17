@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D911CA2822B7CC050016836E /* LettersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911CA2722B7CC050016836E /* LettersVC.swift */; };
+		D911CA2A22B7CC190016836E /* LettersVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D911CA2922B7CC190016836E /* LettersVC.storyboard */; };
+		D911CA2C22B7CF4E0016836E /* LettersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911CA2B22B7CF4E0016836E /* LettersCell.swift */; };
 		D94B507522999484004EB163 /* credentials-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = D94B507422999484004EB163 /* credentials-2.plist */; };
 		D94B507722999DE8004EB163 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D94B507622999DE8004EB163 /* GoogleService-Info.plist */; };
 		D94B507A229AEB0C004EB163 /* CountriesVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94B5079229AEB0C004EB163 /* CountriesVC.storyboard */; };
@@ -33,6 +36,9 @@
 		3A4863DB549D530465BC273C /* Pods-Countries List App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Countries List App.debug.xcconfig"; path = "Target Support Files/Pods-Countries List App/Pods-Countries List App.debug.xcconfig"; sourceTree = "<group>"; };
 		7CA73D3B40CBBF1EC45A63BF /* Pods_Countries_List_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Countries_List_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B7F7A3FF688A8EAE58C80B /* Pods-Countries List App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Countries List App.release.xcconfig"; path = "Target Support Files/Pods-Countries List App/Pods-Countries List App.release.xcconfig"; sourceTree = "<group>"; };
+		D911CA2722B7CC050016836E /* LettersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersVC.swift; sourceTree = "<group>"; };
+		D911CA2922B7CC190016836E /* LettersVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LettersVC.storyboard; sourceTree = "<group>"; };
+		D911CA2B22B7CF4E0016836E /* LettersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersCell.swift; sourceTree = "<group>"; };
 		D94B507422999484004EB163 /* credentials-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "credentials-2.plist"; sourceTree = "<group>"; };
 		D94B507622999DE8004EB163 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D94B5079229AEB0C004EB163 /* CountriesVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CountriesVC.storyboard; sourceTree = "<group>"; };
@@ -83,6 +89,16 @@
 				7CA73D3B40CBBF1EC45A63BF /* Pods_Countries_List_App.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D911CA2622B7CB940016836E /* LettersScene */ = {
+			isa = PBXGroup;
+			children = (
+				D911CA2722B7CC050016836E /* LettersVC.swift */,
+				D911CA2922B7CC190016836E /* LettersVC.storyboard */,
+				D911CA2B22B7CF4E0016836E /* LettersCell.swift */,
+			);
+			path = LettersScene;
 			sourceTree = "<group>";
 		};
 		D94B5078229AEA6F004EB163 /* CountriesScreen */ = {
@@ -166,6 +182,7 @@
 		D9838C662296D4AC008E0E0A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				D911CA2622B7CB940016836E /* LettersScene */,
 				D94B5078229AEA6F004EB163 /* CountriesScreen */,
 				D9838C6A2296D7DA008E0E0A /* Auth */,
 			);
@@ -287,6 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D911CA2A22B7CC190016836E /* LettersVC.storyboard in Resources */,
 				D9838C6F2296E3AB008E0E0A /* RegisterVC.storyboard in Resources */,
 				D9838C6C2296E2A8008E0E0A /* Colors.xcassets in Resources */,
 				D94B507A229AEB0C004EB163 /* CountriesVC.storyboard in Resources */,
@@ -364,12 +382,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D911CA2C22B7CF4E0016836E /* LettersCell.swift in Sources */,
 				D94B507F229AEDA4004EB163 /* CountryCell.swift in Sources */,
 				D9838C732296E4AB008E0E0A /* Theme.swift in Sources */,
 				D94B5081229AF131004EB163 /* CountryModel.swift in Sources */,
 				D9E83EEC2297908500302485 /* UITextFieldExtension.swift in Sources */,
 				D94B5086229AF1FC004EB163 /* CountriesService.swift in Sources */,
 				D9838C712296E47F008E0E0A /* UIViewExtension.swift in Sources */,
+				D911CA2822B7CC050016836E /* LettersVC.swift in Sources */,
 				D94B5083229AF15F004EB163 /* DataModel.swift in Sources */,
 				D94B507D229AEB3C004EB163 /* CountriesVC.swift in Sources */,
 				D9838C792296E815008E0E0A /* LogInVC.swift in Sources */,

@@ -54,7 +54,6 @@ class LogInVC: UIViewController {
         guard emailTextField.hasValue , let email = emailTextField.text ,
               passwordTextField.hasValue , let password = passwordTextField.text else {return}
         
-        hud.textLabel.text = "loading"
         hud.show(in: view, animated: true)
         
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in

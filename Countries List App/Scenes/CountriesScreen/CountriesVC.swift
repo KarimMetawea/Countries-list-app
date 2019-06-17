@@ -19,6 +19,7 @@ class CountriesVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     
+    
 //  properties
     let hud: JGProgressHUD = {
         let hud = JGProgressHUD(style: .light)
@@ -26,28 +27,30 @@ class CountriesVC: UIViewController {
         return hud
     }()
     
+    var countries = [Country]()
+    
 //    life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-        hud.show(in: view, animated: true)
+//        hud.show(in: view, animated: true)
         
-        navigationItem.hidesBackButton = true
+        
         
         let logOutButton = UIBarButtonItem(title: "LogOut", style: .plain, target: self, action: #selector(handleLogOutButton))
         navigationItem.rightBarButtonItem = logOutButton
         CountriesService.getCountries { (success, error) in
             if success {
                 self.tableView.reloadData()
-                self.hud.dismiss(afterDelay: 1)
+//                self.hud.dismiss(afterDelay: 1)
             }
             
-            self.hud.dismiss(afterDelay: 1)
+//            self.hud.dismiss(afterDelay: 1)
             
             }
-        
-        
     }
+    
+   
     
 //    log out using navigation item
     @objc func handleLogOutButton(){
@@ -73,12 +76,12 @@ extension CountriesVC : UITableViewDelegate , UITableViewDataSource {
     
 //    data source methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DataModel.countries.count
+        return countries.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CountryCell") as! CountryCell
-        let country = DataModel.countries[indexPath.row]
+        let country = countries[indexPath.row]
         cell.configureCell(country: country)
         return cell
     }
